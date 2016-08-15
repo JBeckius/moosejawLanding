@@ -1,0 +1,57 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700,900';
+* {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  max-width: 100%; }
+
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px; }
+
+header {
+  width: 960px;
+  margin: 0px auto; }
+
+#bodyCopy {
+  width: 800px;
+  margin: 0px auto; }
+  #bodyCopy h1 {
+    font-size: 55px;
+    font-weight: 900;
+    margin-bottom: 10px; }
+  #bodyCopy p {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 30px; }
+
+#slideContent {
+  width: 980px;
+  margin: 0px auto; }
+  #slideContent #bikersImg {
+    margin: 0px; }
+  #slideContent #slideSection {
+    width: 961px;
+    margin: 0 auto;
+    position: relative;
+    top: -3px; }
+    #slideContent #slideSection #leftPhoto {
+      max-width: 210px;
+      max-height: 310px;
+      width: 22%;
+      float: left;
+      margin: 0px;
+      position: relative; }
+    #slideContent #slideSection #rightPhoto {
+      max-width: 210px;
+      max-height: 310px;
+      width: 22%;
+      float: right; }
+    #slideContent #slideSection #slideshow {
+      width: 100%; }
+      #slideContent #slideSection #slideshow img {
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        left: 22%;
+        width: 60%; }
