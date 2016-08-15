@@ -40,41 +40,50 @@ header {
   }
 
   #slideSection {
-    width:961px;
+    display: flex;
+    flex-direction: row;
+    max-width:961px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     top: -3px;
+    .flank {
+      width: 37%;
+      #leftPhoto {
+        width: 100%;
+        max-width: 210px;
+        // max-height: 310px;
+        // width: 22%;
+        // float: left;
+        margin: auto;
+        // position: relative;
+        // left: -100px;
+      }
 
-    #leftPhoto {
-      max-width: 210px;
-      max-height: 310px;
-      width: 22%;
-      float: left;
-      margin: 0px;
-      position: relative;
-      // left: -100px;
+
+      #rightPhoto {
+        width:100%;
+        max-width: 210px;
+        margin: auto;
+        // max-height: 310px;
+        // width: 22%;
+        // float: right;
+      }
     }
 
-    #rightPhoto {
-      max-width: 210px;
-      max-height: 310px;
-      width: 22%;
-      float: right;
-    }
+
 
     #slideshow {
-      // height: 200px;
-
+      z-index: 999;
+      margin: -10px -10px -10px -10px;
       width: 100%;
+
       img {
-        margin: 0 auto;
+        margin: auto;
         display: block;
-        position: relative;
-        left: 22%;
-        // width: 500px;
-        // margin: 0 auto;
-        // max-width: 500px;
-        width: 60%;
+        // width: 100%;
+        box-shadow: 3px 5px 5px rgba(0,0,0,0.2);
+
       }
     }
 

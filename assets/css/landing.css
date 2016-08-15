@@ -31,27 +31,28 @@ header {
   #slideContent #bikersImg {
     margin: 0px; }
   #slideContent #slideSection {
-    width: 961px;
+    display: flex;
+    flex-direction: row;
+    max-width: 961px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     top: -3px; }
-    #slideContent #slideSection #leftPhoto {
-      max-width: 210px;
-      max-height: 310px;
-      width: 22%;
-      float: left;
-      margin: 0px;
-      position: relative; }
-    #slideContent #slideSection #rightPhoto {
-      max-width: 210px;
-      max-height: 310px;
-      width: 22%;
-      float: right; }
+    #slideContent #slideSection .flank {
+      width: 37%; }
+      #slideContent #slideSection .flank #leftPhoto {
+        width: 100%;
+        max-width: 210px;
+        margin: auto; }
+      #slideContent #slideSection .flank #rightPhoto {
+        width: 100%;
+        max-width: 210px;
+        margin: auto; }
     #slideContent #slideSection #slideshow {
+      z-index: 999;
+      margin: -10px -10px -10px -10px;
       width: 100%; }
       #slideContent #slideSection #slideshow img {
-        margin: 0 auto;
+        margin: auto;
         display: block;
-        position: relative;
-        left: 22%;
-        width: 60%; }
+        box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2); }
