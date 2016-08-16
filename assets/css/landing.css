@@ -27,7 +27,8 @@ header {
 
 #slideContent {
   width: 980px;
-  margin: 0px auto; }
+  margin: 0px auto;
+  margin-bottom: 20px; }
   #slideContent #bikersImg {
     margin: 0px; }
   #slideContent #slideSection {
@@ -37,7 +38,7 @@ header {
     width: 100%;
     margin: 0 auto;
     position: relative;
-    top: -3px; }
+    top: -4px; }
     #slideContent #slideSection .flank {
       width: 37%; }
       #slideContent #slideSection .flank #leftPhoto {
