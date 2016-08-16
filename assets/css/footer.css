@@ -3,7 +3,12 @@
   flex-direction: row;
   max-width: 940px;
   margin: auto; }
-  .row button {
+  .row ul {
+    list-style-type: none; }
+    .row ul a {
+      vertical-align: middle;
+      text-decoration: none; }
+  .row button, .row li {
     font-size: 16px;
     border: none;
     background-color: #090909;

@@ -33,12 +33,16 @@ header {
 }
 
 #slideContent {
+  position: relative;
   width: 980px;
   margin: 0px auto;
   margin-bottom: 20px;
   #bikersImg {
     margin: 0px;
   }
+
+  }
+
 
   #slideSection {
     display: flex;
@@ -53,12 +57,7 @@ header {
       #leftPhoto {
         width: 100%;
         max-width: 210px;
-        // max-height: 310px;
-        // width: 22%;
-        // float: left;
         margin: auto;
-        // position: relative;
-        // left: -100px;
       }
 
 
@@ -78,7 +77,11 @@ header {
       z-index: 999;
       margin: -10px -10px -10px -10px;
       width: 100%;
+      position: relative;
 
+      a{
+        color:#66C6E5;
+      }
       img {
         margin: auto;
         display: block;
@@ -86,7 +89,44 @@ header {
         box-shadow: 3px 5px 5px rgba(0,0,0,0.2);
 
       }
+      p {
+        position: absolute;
+        display: block;
+        font-size: 14px;
+        // margin: -5%;
+        height: 30%;
+        margin: 0 auto;
+        width: 90%;
+        color: white;
+        padding: 0 3.5%;
+        padding-top: 2%;
+        left: 1.5%;
+        top: 65%;
+        background-color: rgba(0,0,0, 0.6);
+
+      }
     }
 
   }
-}
+  .flank {
+    position: relative;
+    button {
+      font-weight: 400;
+      position: absolute;
+      background: none;
+      border: none;
+      top: 30%;
+      color: white;
+      font-size: 80px;
+      outline: none;
+    }
+    button:hover {
+      color: #66C6E5;
+    }
+    #forward {
+      right: 10%;
+    }
+    #back {
+      left: 10%;
+    }
+  }

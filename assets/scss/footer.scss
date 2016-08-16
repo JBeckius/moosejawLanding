@@ -3,7 +3,16 @@
   flex-direction: row;
   max-width: 940px;
   margin: auto;
-  button {
+  ul {
+    list-style-type: none;
+    // display: table-cell;
+    a {
+      vertical-align: middle;
+      text-decoration: none;
+      // display: table-cell;
+    }
+  }
+  button, li{
     font-size: 16px;
     border: none;
     background-color: #090909;

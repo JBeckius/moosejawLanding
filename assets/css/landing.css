@@ -26,34 +26,70 @@ header {
     margin-bottom: 30px; }
 
 #slideContent {
+  position: relative;
   width: 980px;
   margin: 0px auto;
   margin-bottom: 20px; }
   #slideContent #bikersImg {
     margin: 0px; }
-  #slideContent #slideSection {
-    display: flex;
-    flex-direction: row;
-    max-width: 961px;
+
+#slideSection {
+  display: flex;
+  flex-direction: row;
+  max-width: 961px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  top: -4px; }
+  #slideSection .flank {
+    width: 37%; }
+    #slideSection .flank #leftPhoto {
+      width: 100%;
+      max-width: 210px;
+      margin: auto; }
+    #slideSection .flank #rightPhoto {
+      width: 100%;
+      max-width: 210px;
+      margin: auto; }
+  #slideSection #slideshow {
+    z-index: 999;
+    margin: -10px -10px -10px -10px;
     width: 100%;
-    margin: 0 auto;
-    position: relative;
-    top: -4px; }
-    #slideContent #slideSection .flank {
-      width: 37%; }
-      #slideContent #slideSection .flank #leftPhoto {
-        width: 100%;
-        max-width: 210px;
-        margin: auto; }
-      #slideContent #slideSection .flank #rightPhoto {
-        width: 100%;
-        max-width: 210px;
-        margin: auto; }
-    #slideContent #slideSection #slideshow {
-      z-index: 999;
-      margin: -10px -10px -10px -10px;
-      width: 100%; }
-      #slideContent #slideSection #slideshow img {
-        margin: auto;
-        display: block;
-        box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2); }
+    position: relative; }
+    #slideSection #slideshow a {
+      color: #66C6E5; }
+    #slideSection #slideshow img {
+      margin: auto;
+      display: block;
+      box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2); }
+    #slideSection #slideshow p {
+      position: absolute;
+      display: block;
+      font-size: 14px;
+      height: 30%;
+      margin: 0 auto;
+      width: 90%;
+      color: white;
+      padding: 0 3.5%;
+      padding-top: 2%;
+      left: 1.5%;
+      top: 65%;
+      background-color: rgba(0, 0, 0, 0.6); }
+
+.flank {
+  position: relative; }
+  .flank button {
+    font-weight: 400;
+    position: absolute;
+    background: none;
+    border: none;
+    top: 30%;
+    color: white;
+    font-size: 80px;
+    outline: none; }
+  .flank button:hover {
+    color: #66C6E5; }
+  .flank #forward {
+    right: 10%; }
+  .flank #back {
+    left: 10%; }
